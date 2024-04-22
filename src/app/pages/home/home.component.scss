@@ -1,0 +1,19 @@
+@import '../../../variables.scss';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 1rem;
+
+  @media screen and (min-width: $media1024) {
+    margin: 8rem 1rem;
+  }
+
+  &__title {
+    font-family: $heading-font-family;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+  }
+}
