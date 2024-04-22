@@ -1,0 +1,82 @@
+@import '../../../variables.scss';
+
+.repoCard {
+  display: flex;
+  flex-direction: column;
+  background-color: $bg-secondary-color;
+  border-radius: $border-radius-large;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+  &__firstRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+
+
+    &__name {
+      display: flex;
+      align-items: center;
+
+      svg {
+        fill: $txt-secondary-color;
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      &__txt {
+        color: $txt-anchor-color;
+        margin-left: .5rem;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__flag {
+      font-size: .7rem;
+      color: $txt-secondary-color;
+      padding: .3rem .4rem;
+      border-radius: $border-radius-large;
+      border: 1px solid $txt-secondary-color;
+      margin-left: .5rem;
+    }
+  }
+
+  &__secondRow {
+    margin-bottom: 1rem;
+
+    &__description {
+      font-size: .9rem;
+      color: $txt-secondary-color;
+    }
+  }
+
+  &__thirdRow {
+    display: flex;
+    align-items: center;
+
+    &__language {
+      color: $txt-secondary-color;
+    }
+
+    &__stars {
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+
+      svg {
+        fill: $txt-secondary-color;
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+
+      &__counter {
+        color: $txt-secondary-color;
+        margin-left: .3rem;
+      }
+    }
+  }
+}
