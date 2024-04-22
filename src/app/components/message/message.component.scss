@@ -1,0 +1,37 @@
+@import '../../../variables.scss';
+
+.messageContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-height: 30px;
+  max-width: 15rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: $media1024) {
+    max-width: 35rem;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+.warningMessage {
+  background-color: $bg-secondary-color;
+  border: 1px solid $warning-color;
+  border-radius: $border-radius-medium;
+}
+
+.errorMessage {
+  background-color: $bg-secondary-color;
+  border: 1px solid $danger-color;
+  border-radius: $border-radius-medium;
+}
+
+.infoMessage {
+  background-color: $bg-secondary-color;
+  border: 1px solid $info-color;
+  border-radius: $border-radius-medium;
+}
